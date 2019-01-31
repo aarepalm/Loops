@@ -1,31 +1,31 @@
 class Loops {
 
-	private void printEmpytLine() {
+	public void printEmpytLine() {
 		System.out.println();
 	}
 
-	private void printWithFor(int[] numbers) {
+	public void printWithFor(int[] numbers) {
 		for (int i = 0; i < numbers.length; ++i) {
 			System.out.print(numbers[i]);
 		}
 		printEmpytLine();
 	}
 
-	private void printWithForReversed(int[] numbers) {
+	public void printWithForReversed(int[] numbers) {
 		for (int i = numbers.length; i > 0; --i) {
 			System.out.print(numbers[i - 1]);
 		}
 		printEmpytLine();
 	}
 
-	private void printWithEncancedFor(int[] numbers) {
+	public void printWithEncancedFor(int[] numbers) {
 		for (int number : numbers) {
 			System.out.print(number);
 		}
 		printEmpytLine();
 	}
 
-	private void printWithWhile(int[] numbers) {
+	public void printWithWhile(int[] numbers) {
 		int i = 0;
 		while (i < numbers.length) {
 			System.out.print(numbers[i]);
@@ -34,7 +34,7 @@ class Loops {
 		printEmpytLine();
 	}
 
-	private void printWithWhileReversed(int[] numbers) {
+	public void printWithWhileReversed(int[] numbers) {
 		int i = numbers.length;
 		while (i > 0) {
 			System.out.print(numbers[i - 1]);
@@ -43,7 +43,7 @@ class Loops {
 		printEmpytLine();
 	}
 
-	private void printWithDoWhile(int[] numbers) {
+	public void printWithDoWhile(int[] numbers) {
 		if (numbers.length == 0)
 			return;
 
@@ -55,7 +55,7 @@ class Loops {
 		printEmpytLine();
 	}
 
-	private void printWithDoWhilwReversed(int[] numbers) {
+	public void printWithDoWhilwReversed(int[] numbers) {
 		if (numbers.length == 0)
 			return;
 
