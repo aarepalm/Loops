@@ -55,7 +55,7 @@ class Loops {
 		printEmpytLine();
 	}
 
-	public void printWithDoWhilwReversed(int[] numbers) {
+	public void printWithDoWhileReversed(int[] numbers) {
 		if (numbers.length == 0)
 			return;
 
@@ -81,7 +81,7 @@ class Loops {
 		loops.printWithWhileReversed(numbers);
 
 		loops.printWithDoWhile(numbers);
-		loops.printWithDoWhilwReversed(numbers);
+		loops.printWithDoWhileReversed(numbers);
 
 		// This is a different kind of for loop
 		loops.printWithEncancedFor(numbers);
