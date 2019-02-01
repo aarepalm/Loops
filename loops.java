@@ -1,49 +1,49 @@
 class Loops {
 
-	public void printEmpytLine() {
+	private void printLineBreak() {
 		System.out.println();
 	}
 
-	public void printWithFor(int[] numbers) {
+	private void printWithFor(int[] numbers) {
 		for (int i = 0; i < numbers.length; ++i) {
 			System.out.print(numbers[i]);
 		}
-		printEmpytLine();
+		printLineBreak();
 	}
 
-	public void printWithForReversed(int[] numbers) {
+	private void printWithForReversed(int[] numbers) {
 		for (int i = numbers.length; i > 0; --i) {
 			System.out.print(numbers[i - 1]);
 		}
-		printEmpytLine();
+		printLineBreak();
 	}
 
-	public void printWithEncancedFor(int[] numbers) {
+	private void printWithEncancedFor(int[] numbers) {
 		for (int number : numbers) {
 			System.out.print(number);
 		}
-		printEmpytLine();
+		printLineBreak();
 	}
 
-	public void printWithWhile(int[] numbers) {
+	private void printWithWhile(int[] numbers) {
 		int i = 0;
 		while (i < numbers.length) {
 			System.out.print(numbers[i]);
 			++i;
 		}
-		printEmpytLine();
+		printLineBreak();
 	}
 
-	public void printWithWhileReversed(int[] numbers) {
+	private void printWithWhileReversed(int[] numbers) {
 		int i = numbers.length;
 		while (i > 0) {
 			System.out.print(numbers[i - 1]);
 			--i;
 		}
-		printEmpytLine();
+		printLineBreak();
 	}
 
-	public void printWithDoWhile(int[] numbers) {
+	private void printWithDoWhile(int[] numbers) {
 		if (numbers.length == 0)
 			return;
 
@@ -52,10 +52,10 @@ class Loops {
 			System.out.print(numbers[i]);
 			++i;
 		} while (i < numbers.length);
-		printEmpytLine();
+		printLineBreak();
 	}
 
-	public void printWithDoWhileReversed(int[] numbers) {
+	private void printWithDoWhilwReversed(int[] numbers) {
 		if (numbers.length == 0)
 			return;
 
@@ -64,7 +64,7 @@ class Loops {
 			System.out.print(numbers[i - 1]);
 			--i;
 		} while (i > 0);
-		printEmpytLine();
+		printLineBreak();
 	}
 
 	public static void main(String[] args) {
@@ -81,7 +81,7 @@ class Loops {
 		loops.printWithWhileReversed(numbers);
 
 		loops.printWithDoWhile(numbers);
-		loops.printWithDoWhileReversed(numbers);
+		loops.printWithDoWhilwReversed(numbers);
 
 		// This is a different kind of for loop
 		loops.printWithEncancedFor(numbers);
